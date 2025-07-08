@@ -1,18 +1,22 @@
 {
   "assemblies": [
     {
-      "name": "irgsp1_genome",
+      "name": "irgsp1",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "irgsp1_genome-ReferenceSequenceTrack",
+        "trackId": "irgsp1-ReferenceSequenceTrack",
         "adapter": {
-          "type": "IndexedFastaAdapter",
+          "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "irgsp1_genome.fasta",
+            "uri": "irgsp1.fasta.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "irgsp1_genome.fasta.fai",
+            "uri": "irgsp1.fasta.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "irgsp1.fasta.gz.gzi",
             "locationType": "UriLocation"
           }
         }
@@ -32,19 +36,19 @@
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "locus.sorted.gff.gz",
+          "uri": "IRGSP-1.0_representative/locus.sorted.gff.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "locus.sorted.gff.gz.tbi",
+            "uri": "IRGSP-1.0_representative/locus.sorted.gff.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "irgsp1_genome"
+        "irgsp1"
       ]
     }
   ]
