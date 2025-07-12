@@ -116,6 +116,72 @@
       "assemblyNames": [
         "irgsp1"
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep3.24.sorted.bed",
+      "name": "zygote_rep3.24.sorted.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "zygote_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "zygote_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep5.24.sorted.bed",
+      "name": "zygote_rep5.24.sorted.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "zygote_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "zygote_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep6.24.sorted.bed",
+      "name": "zygote_rep6.24.sorted.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "zygote_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "zygote_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
     }
   ]
 }
