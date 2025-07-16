@@ -930,6 +930,28 @@
       "assemblyNames": [
         "irgsp1"
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "transcripts_renamed.sorted.gff",
+      "name": "transcripts_renamed.sorted.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "transcripts_renamed.sorted.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "transcripts_renamed.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
     }
   ]
 }
