@@ -182,6 +182,710 @@
       "assemblyNames": [
         "irgsp1"
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep1.24",
+      "name": "egg_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep2.24",
+      "name": "egg_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep3.24",
+      "name": "egg_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep4.24",
+      "name": "egg_rep4.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep4.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep4.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep5.24",
+      "name": "egg_rep5.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_rep6.24",
+      "name": "egg_rep6.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/egg_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/egg_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "fertilized_ovary_rep1.24",
+      "name": "fertilized_ovary_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/fertilized_ovary_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/fertilized_ovary_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "fertilized_ovary_rep2.24",
+      "name": "fertilized_ovary_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/fertilized_ovary_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/fertilized_ovary_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "fertilized_ovary_rep3.24",
+      "name": "fertilized_ovary_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/fertilized_ovary_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/fertilized_ovary_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep1.24",
+      "name": "seedling_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep2.24",
+      "name": "seedling_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep3.24",
+      "name": "seedling_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep4.24",
+      "name": "seedling_rep4.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep4.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep4.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep5.24",
+      "name": "seedling_rep5.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_rep6.24",
+      "name": "seedling_rep6.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/seedling_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/seedling_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep1.24",
+      "name": "sperm_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep2.24",
+      "name": "sperm_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep3.24",
+      "name": "sperm_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep4.24",
+      "name": "sperm_rep4.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep4.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep4.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep5.24",
+      "name": "sperm_rep5.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep6.24",
+      "name": "sperm_rep6.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep7.24",
+      "name": "sperm_rep7.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep7.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep7.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_rep8.24",
+      "name": "sperm_rep8.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/sperm_rep8.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/sperm_rep8.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "unfertilized_ovary_rep1.24",
+      "name": "unfertilized_ovary_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/unfertilized_ovary_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/unfertilized_ovary_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "unfertilized_ovary_rep2.24",
+      "name": "unfertilized_ovary_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/unfertilized_ovary_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/unfertilized_ovary_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "unfertilized_ovary_rep3.24",
+      "name": "unfertilized_ovary_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/unfertilized_ovary_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/unfertilized_ovary_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep1.24",
+      "name": "zygote_rep1.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep1.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep1.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep2.24",
+      "name": "zygote_rep2.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep2.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep2.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep3.24",
+      "name": "zygote_rep3.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep4.24",
+      "name": "zygote_rep4.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep4.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep4.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep5.24",
+      "name": "zygote_rep5.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep6.24",
+      "name": "zygote_rep6.24",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "tracks_sorted/zygote_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "tracks_sorted/zygote_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
     }
   ]
 }
