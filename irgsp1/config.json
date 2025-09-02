@@ -31,7 +31,22 @@
       {
         "type": "LinearGenomeView",
         "trackSelectorType": "hierarchical",
-        "trackSelectorCollapsed": false
+        "trackSelectorCollapsed": false,
+        "tracks": [
+          {
+            "type": "ReferenceSequenceTrack",
+            "trackId": "refseq",
+            "displays": [
+              {
+                "type": "LinearReferenceSequenceDisplay",
+                "renderer": {
+                  "type": "DivSequenceRenderer",
+                  "showTranslation": false
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
