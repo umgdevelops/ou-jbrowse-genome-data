@@ -26,7 +26,14 @@
   "configuration": {},
   "connections": [],
   "defaultSession": {
-    "name": "New Session"
+    "name": "Zygotic Data in IRGSP1",
+    "views": [
+      {
+        "type": "LinearGenomeView",
+        "trackSelectorType": "hierarchical",
+        "trackSelectorCollapsed": false
+      }
+    ]
   },
   "tracks": [
     {
