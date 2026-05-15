@@ -1,22 +1,44 @@
 {
   "assemblies": [
     {
-      "name": "irgsp1",
+      "name": "nippon",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "irgsp1-ReferenceSequenceTrack",
+        "trackId": "nippon-ReferenceSequenceTrack",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz",
+            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz.fai",
+            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz.gzi",
+            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "kitaake",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "kitaake-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz.gzi",
             "locationType": "UriLocation"
           }
         }
@@ -35,7 +57,7 @@
         "type": "LinearGenomeView",
         "init": {
           "loc": "5:14,782,881..14,785,542",
-          "assembly": "irgsp1",
+          "assemblyNames": ["nippon", "kitaake"],
           "trackSelectorType": "hierarchical",
           "trackSelectorCollapsed": false,
           "tracks": [
@@ -72,14 +94,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "egg_merged_coverage",
       "name": "Egg Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -116,7 +138,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -141,7 +163,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -166,7 +188,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -191,7 +213,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -216,7 +238,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -241,7 +263,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -266,14 +288,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "fertilized_ovary_merged_coverage",
       "name": "Fertilized Ovary Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -310,7 +332,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -335,7 +357,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -360,7 +382,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -385,14 +407,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "seedling_merged_coverage",
       "name": "Seedling Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -429,7 +451,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -454,7 +476,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -479,7 +501,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -504,7 +526,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -529,7 +551,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -554,7 +576,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -579,14 +601,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "sperm_merged_coverage",
       "name": "Sperm Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -623,7 +645,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -648,7 +670,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -673,7 +695,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -698,7 +720,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -723,7 +745,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -748,7 +770,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -773,7 +795,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -798,7 +820,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -823,14 +845,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "unfertilized_ovary_merged_coverage",
       "name": "Unfertilized Ovary Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -867,7 +889,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -892,7 +914,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -917,7 +939,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -942,14 +964,14 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
       "trackId": "zygote_merged_coverage",
       "name": "Zygote Coverage (Merged)",
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
@@ -986,7 +1008,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1011,7 +1033,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1036,7 +1058,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1061,7 +1083,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1086,7 +1108,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1111,7 +1133,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     },
     {
@@ -1136,7 +1158,7 @@
         }
       },
       "assemblyNames": [
-        "irgsp1"
+        "nippon", "kitaake"
       ]
     }
   ]
