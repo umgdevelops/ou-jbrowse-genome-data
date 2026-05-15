@@ -1,44 +1,44 @@
 {
   "assemblies": [
     {
-      "name": "nippon",
+      "name": "Nipponbare",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "nippon-ReferenceSequenceTrack",
+        "trackId": "Nipponbare-ReferenceSequenceTrack",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.fai",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
-            "uri": "../irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.gzi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/nipponbare_genome/irgsp1_new_renamed.fasta.gz.gzi",
             "locationType": "UriLocation"
           }
         }
       }
     },
     {
-      "name": "kitaake",
+      "name": "Kitaake",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "kitaake-ReferenceSequenceTrack",
+        "trackId": "Kitaake-ReferenceSequenceTrack",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome/cleaned_kitaake_assembly_jbrowse_format.fna.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz.fai",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome/cleaned_kitaake_assembly_jbrowse_format.fna.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
-            "uri": "../irgsp1/kitaake_genome/cleaned_kitaake_assembly.fna.gz.gzi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome/cleaned_kitaake_assembly_jbrowse_format.fna.gz.gzi",
             "locationType": "UriLocation"
           }
         }
@@ -57,12 +57,12 @@
         "type": "LinearGenomeView",
         "init": {
           "loc": "5:14,782,881..14,785,542",
-          "assemblyNames": ["nippon", "kitaake"],
+          "assembly": "Nipponbare",
           "trackSelectorType": "hierarchical",
           "trackSelectorCollapsed": false,
           "tracks": [
             
-            "irgsp1-ReferenceSequenceTrack",
+            "Nipponbare Genes",
             "egg_merged_coverage",
             "fertilized_ovary_merged_coverage",
             "seedling_merged_coverage",
@@ -77,38 +77,104 @@
   "tracks": [
     {
       "type": "FeatureTrack",
-      "trackId": "transcripts.sorted.gff",
-      "name": "transcripts.sorted.gff",
+      "trackId": "Nipponbare Genes",
+      "name": "Nipponbare Genes",
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/IRGSP-1.0_representative/transcripts_renamed.sorted.gff.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/IRGSP-1.0_representative/all.gff3.sorted.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/IRGSP-1.0_representative/transcripts_renamed.sorted.gff.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/IRGSP-1.0_representative/all.gff3.sorted.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Nipponbare Transposons",
+      "name": "Nipponbare Transposons",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/IRGSP-1.0_representative/all.con.mod.EDTA.TEanno.reformat.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/IRGSP-1.0_representative/all.con.mod.EDTA.TEanno.reformat.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Nipponbare"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Kitaake Genes",
+      "name": "Kitaake Genes",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome_annotations/final_kitaake_annotations_jbrowse_sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome_annotations/final_kitaake_annotations_jbrowse_sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Kitaake"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Kitaake Transposons",
+      "name": "Kitaake Transposons",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome_annotations/cleaned_kitaake_assembly_jbrowse_sorted.fna.mod.EDTA.TEanno.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/kitaake_genome_annotations/cleaned_kitaake_assembly_jbrowse_sorted.fna.mod.EDTA.TEanno.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Kitaake"
       ]
     },
     {
       "trackId": "egg_merged_coverage",
       "name": "Egg Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -126,19 +192,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -151,19 +217,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep1.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep1.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -176,19 +242,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -201,19 +267,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -226,19 +292,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep4.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep4.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep4.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep4.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -251,19 +317,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep5.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep5.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep5.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep5.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -276,33 +342,33 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep6.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep6.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_rep6.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/egg/egg_rep6.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
       "trackId": "fertilized_ovary_merged_coverage",
       "name": "Fertilized Ovary Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -320,19 +386,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -345,19 +411,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep1.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep1.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -370,19 +436,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -395,33 +461,33 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
       "trackId": "seedling_merged_coverage",
       "name": "Seedling Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -439,19 +505,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -464,19 +530,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep1.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep1.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -489,19 +555,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -514,19 +580,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -539,19 +605,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep4.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep4.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep4.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep4.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -564,19 +630,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep5.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep5.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep5.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep5.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -589,33 +655,33 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep6.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep6.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_rep6.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/seedling/seedling_rep6.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
       "trackId": "sperm_merged_coverage",
       "name": "Sperm Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -633,19 +699,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -658,19 +724,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep1.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep1.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -683,19 +749,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -708,19 +774,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -733,19 +799,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep4.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep4.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep4.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep4.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -758,19 +824,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep5.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep5.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep5.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep5.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -783,19 +849,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep6.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep6.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep6.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep6.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -808,19 +874,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep7.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep7.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep7.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep7.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -833,33 +899,33 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep8.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep8.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_rep8.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/sperm/sperm_rep8.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
       "trackId": "unfertilized_ovary_merged_coverage",
       "name": "Unfertilized Ovary Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -877,19 +943,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -902,19 +968,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep1.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep1.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -927,19 +993,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -952,33 +1018,33 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
       "trackId": "zygote_merged_coverage",
       "name": "Zygote Coverage (Merged)",
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ],
       "type": "QuantitativeTrack",
       "autoscale": "local,clipped_global,global,z_score",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_cat.chr.sorted.bw"
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_cat.chr.sorted.bw"
         }
       },
       "category": [
@@ -996,19 +1062,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1021,19 +1087,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep1.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep1.24.sorted.bed.gz?v=2",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep1.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep1.24.sorted.bed.gz.tbi?v=2",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1046,19 +1112,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep2.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep2.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep2.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep2.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1071,19 +1137,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep3.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep3.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep3.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep3.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1096,19 +1162,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep4.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep4.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep4.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep4.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1121,19 +1187,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep5.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep5.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep5.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep5.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     },
     {
@@ -1146,19 +1212,19 @@
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep6.24.sorted.bed.gz",
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep6.24.sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_rep6.24.sorted.bed.gz.tbi",
+            "uri": "https://data.cyverse.org/dav-anon/iplant/home/groyres/irgsp1/tracks_sorted/zygote/zygote_rep6.24.sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "nippon", "kitaake"
+        "Nipponbare"
       ]
     }
   ]
